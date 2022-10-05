@@ -20,26 +20,26 @@ int main() {
     */
     switch (ch[0])
     {
-    case '+':
-        goto link;
-        break;
-    case '*':
-        goto link;
-        break;
-    case '-':
-        goto link;
-        break;
-    case '[':
-        goto link_2;
-        break;
-    case ']':
-        goto link_2;
-        break;
-    case '0':
-        return 0;
-    default:
-        goto link_4;
-        return 404;
+        case '+':
+            goto link;
+            break;
+        case '*':
+            goto link;
+            break;
+        case '-':
+            goto link;
+            break;
+        case '[':
+            goto link_2;
+            break;
+        case ']':
+            goto link_2;
+            break;
+        case '0':
+            return 0;
+        default:
+            goto link_4;
+            return 404;
     }
 
     link: { // first
